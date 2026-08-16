@@ -143,5 +143,10 @@ int parentesisBalanceados(char *cadena) {
          }
       }
    }
+   if (balanceado && top(S) != NULL) {
+      balanceado = 0;
+   }
+
+   return balanceado;
 }
 
