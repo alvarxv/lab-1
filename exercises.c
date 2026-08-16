@@ -94,6 +94,19 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+   Stack *aux = create_stack();
+   void *dato;
+
+   // vaciamos P1 en aux (queda en orden inverso)
+   while ((dato = pop(P1)) != NULL) {
+      push(aux, dato);
+   }
+
+   // al pasar de aux de vuelta a P1 y P2 recuperamos el orden original
+   while ((dato = pop(aux)) != NULL) {
+      push(P1, dato);
+      push(P2, dato);
+   }
 }
 
 /*
