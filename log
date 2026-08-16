@@ -22,3 +22,14 @@ Sun Aug 16 01:21:35 AM UTC 2026:
  tests:  4|1
 total_score: 50/70
 74ce916
+Sun Aug 16 01:24:38 AM UTC 2026: 
+ exercises.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:146:1: error: control reaches end of non-void function [-Werror=return-type]
+  146 | }
+      | ^
+cc1: all warnings being treated as errors
+ab5cc49
